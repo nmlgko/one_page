@@ -1,0 +1,79 @@
+@import "vars";
+
+.footer {
+	padding-top: 94px;
+	padding-bottom: 90px;
+	background-color: #141414;
+	.site-info {
+		margin-left: -15px;
+	}
+	.design-name {
+		font-size: 18px;
+		font-family: $font-bold;
+		color: $accent-color2;
+		margin-bottom: 18px;
+		letter-spacing: .3px;
+	}
+	.copyright,
+	.contact,
+	.contact a {
+		@extend %footer-style;
+	}
+	.contact {
+		padding-left: 25%;
+	}
+	&-menu {
+		overflow: hidden;
+	}
+	&-list {
+		float: left;
+		margin-left: 25%;
+		&.social {
+			margin-left: 48%;
+		}
+	}
+	&-link {
+		@extend %footer-style;
+		&:hover {
+			color: #bcbcbc;
+		}
+	}
+
+}
+
+@media screen and (max-width: 991px) {
+	.footer-list {
+		float: left;
+		margin-left: -15px;
+		margin-right: 60px;
+		margin-top: 30px;
+		&.social {
+			margin-left: 25%;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.footer {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.site-info,
+		&-list {
+			margin-left: 0;
+		}
+	}
+}
+@media screen and (max-width: 599px) {
+	.footer-list {
+		margin-right: 30px;
+	}
+}
+@media screen and (max-width: 479px) {
+	.footer {
+		.contact {
+			padding-left: 0;
+		}
+		&-list.social {
+			margin-left: 0;
+		}
+	}
+}

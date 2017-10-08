@@ -1,0 +1,36 @@
+$font-stack: 'NunitoSans-Regular', sans-serif;
+$font-bold: 'Montserrat-Medium', sans-serif;
+$main-color: #787878;
+$accent-color1: #10c9c3;
+$accent-color2: #fff;
+$heading-color1: #1d1d1d;
+$heading-color2: #191919;
+$heading-color3: #171717;
+$bg-color: #f5f5f5;
+$transition: all 0.2s linear;
+
+
+
+%add-el {
+	content: '';
+	position: absolute;
+	display: block;
+}
+%flex-around {
+	display: flex;
+	// -webkit-box-pack: center;
+	-webkit-box-pack: justify;
+	justify-content: space-around;
+}
+%footer-style {
+	font-size: 15px;
+	line-height: 1.6;
+	color: #bcbcbc;
+	letter-spacing: .1px;
+}
+
+@media screen and (max-width: 479px) {
+	%footer-style {
+		font-size: 13px;
+	}
+}

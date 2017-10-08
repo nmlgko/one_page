@@ -1,0 +1,67 @@
+@import "vars";
+
+body {
+	font: {
+		size: 16px;
+		family: $font-stack;
+	}
+	line-height: 1.5;
+}
+.heading {
+	font-size: 30px;
+	font-family: $font-bold;
+	color: $heading-color1;
+	margin-bottom: 25px;
+	line-height: 2;
+}
+.title {
+	font-size: 12px;
+	font-family: $font-bold;
+	text-transform: uppercase;
+}
+.text {
+	font-size: 16px;
+	font-family: $font-stack;
+	color: $main-color;
+	margin-bottom: 25px;
+}
+.btn-style {
+	display: inline-block;
+	width: 180px;
+	color: $accent-color2;
+	font-family: $font-bold;
+	font-size: 12px;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background-color: $accent-color1;
+	text-transform: uppercase;
+	text-align: center;
+	transition: $transition;
+	letter-spacing: 1.1px;
+	&:hover {
+		color: $accent-color2;
+		background-color: lighten($accent-color1, 5%);
+	}
+	&:active {
+		background-color: darken($accent-color1, 5%);
+	}
+}
+.btn-more {
+	font-size: 12px;
+	font-family: $font-bold;
+	color: #8e8e8e;
+	text-transform: uppercase;
+	transition: $transition;
+	&:hover {
+		color: #141414;
+	}
+}
+
+.form-control{
+	width: 100%;
+	height: 48px;
+	padding: {
+		left: 10px;
+		right: 10px;
+	}
+}

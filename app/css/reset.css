@@ -1,0 +1,73 @@
+/* General reset */
+html, body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+strong, small, b{
+	font-weight: normal;
+}
+em, i{
+	font-style: normal;
+}
+input{
+	outline: none;
+	border: 0 none;
+	background-color: transparent;
+}
+button{
+	padding: 2px;
+	border: 0 none;
+	outline: none;
+	background-color: transparent;
+	padding: 0;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover,
+a:focus{
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+/* Reset Tel Number for IOS */
+a[href^=tel]{
+    color: #bcbcbc;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	border-style: none;
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4, h5, p{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+dd, dt{
+	font-weight: normal;
+	line-height: inherit;
+}
+iframe {
+  margin: 0 auto;
+  display: block;
+  border: 0 none;
+  text-align: center;
+}
+*:focus,
+select:focus{
+	outline: none;
+}
