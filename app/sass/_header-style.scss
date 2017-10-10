@@ -18,6 +18,7 @@
 		}
 		.nav_item {
 			margin-left: 28px;
+			
 			&.active {
 				.nav_link {
 					color: $accent-color1;
@@ -39,7 +40,7 @@
 	}
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 991px) {
 	.fixed-head {
 		.header-nav {
 			.nav_item {

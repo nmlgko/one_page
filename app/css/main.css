@@ -99,7 +99,7 @@ select:focus {
   outline: none;
 }
 
-.works-section .grid .item a::before, .process-section .video-holder .video-bg .btn-play::before {
+.process-section .video-holder .video-bg .btn-play::before {
   content: '';
   position: absolute;
   display: block;
@@ -259,7 +259,7 @@ body {
   }
 }
 
-.works-section .grid .item a::before, .process-section .video-holder .video-bg .btn-play::before {
+.process-section .video-holder .video-bg .btn-play::before {
   content: '';
   position: absolute;
   display: block;
@@ -339,7 +339,7 @@ body {
   color: #10c9c3;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 991px) {
   .fixed-head .header-nav .nav_item {
     margin-left: 20px;
   }
@@ -433,7 +433,7 @@ body {
   }
 }
 
-.works-section .grid .item a::before, .process-section .video-holder .video-bg .btn-play::before {
+.process-section .video-holder .video-bg .btn-play::before {
   content: '';
   position: absolute;
   display: block;
@@ -598,14 +598,15 @@ body {
 .numbers-section .numbers_item .icon-holder {
   float: left;
   width: 70px;
-  height: 80px;
-  line-height: 80px;
+}
+
+.numbers-section .numbers_item .icon-holder i {
+  font-size: 3em;
 }
 
 .numbers-section .numbers_item .number {
   font-family: "Montserrat-Medium", sans-serif;
   font-size: 18px;
-  margin-top: 15px;
 }
 
 .numbers-section .numbers_item .title {
@@ -624,22 +625,39 @@ body {
 .works-section .grid .item a {
   position: relative;
   display: block;
-}
-
-.works-section .grid .item a::before {
   width: 100%;
   height: 100%;
-  background-color: rgba(20, 20, 20, 0.8);
-  background-position: 50% 50%;
-  background-image: url("../img/icons/ic-look.png");
-  background-repeat: no-repeat;
+  max-width: 342px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.works-section .grid .item a .hover-el {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
+  background-color: rgba(20, 20, 20, 0.8);
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  text-align: center;
 }
 
-.works-section .grid .item a:hover::before {
+.works-section .grid .item a .hover-el i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 3em;
+  margin-top: -24px;
+  margin-left: -24px;
+}
+
+.works-section .grid .item a:hover .hover-el {
   opacity: 1;
 }
 
@@ -741,6 +759,11 @@ body {
   height: 58px;
   line-height: 58px;
   margin-bottom: 20px;
+}
+
+.services-section .services-list .srvices-item .icon-holder i {
+  vertical-align: middle;
+  font-size: 3em;
 }
 
 .services-section .services-list .srvices-item .title {
@@ -992,7 +1015,7 @@ body {
   }
 }
 
-.works-section .grid .item a::before, .process-section .video-holder .video-bg .btn-play::before {
+.process-section .video-holder .video-bg .btn-play::before {
   content: '';
   position: absolute;
   display: block;
