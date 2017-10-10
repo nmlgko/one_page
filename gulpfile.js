@@ -76,6 +76,7 @@ gulp.task('clean', function() {
 gulp.task('build', ['clean', 'sass', 'scripts'], function () {
 
 	var buildCss = gulp.src([
+		'app/css/pe-icon-7-stroke.css',
 		'app/css/main.css',
 		'app/css/libs.min.css'
 		])
